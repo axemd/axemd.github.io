@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="blue">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de développeur - projets Python, Java, PHP, Symfony et plus encore." />
+  <title>Portfolio | axemd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="sync-dot"></span> axemd
+      </a>
+      <div class="nav-controls">
+        <ul class="nav-links">
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/axemd" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">En ligne</div>
+      <h1>
+        Je construis des<br />
+        <span class="typewriter-container fira">
+          <span class="type-text" id="typewriter">outils qui ont du sens.</span>
+        </span>
+      </h1>
+      <p>
+        Développeur passionné par les problèmes complexes - de l'<span class="highlight">IA musicale</span> à la <span
+          class="highlight">gestion des données</span>, en passant par les <span class="highlight">outils métier sur
+          mesure</span>.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>Découvrir les projets</span>
+          <span class="transfer-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title fira">Mes Projets</h2>
+      <p class="section-subtitle">
+        Des projets concrets autour d'applications métier, de workflows support et d'IA appliquée.
+      </p>
+
+      <div class="projects-grid">
+        <div class="card data-packet reveal" id="festival-cannes-crm">
+          <div class="card-image-placeholder project-image" style="--project-image: url('img/cannes_1.png');"></div>
+          <div class="card-header">
+            <span class="card-tag">
+              <i class="fa-solid fa-users" aria-hidden="true"></i>
+              SAE / CRM
+            </span>
+            <span class="card-id">#01</span>
+          </div>
+          <h2>Festival de Cannes CRM</h2>
+          <p class="card-description">
+            Projet de cours du semestre 5 : fusion de <strong>3 modules existants</strong> en un CRM Symfony, enrichi par un chatbot IA.
+          </p>
+          <div class="card-gained">
+            <strong>Contribution :</strong> intégration du planning et développement complet du chatbot.
+          </div>
+          <div class="card-features">
+            <span class="feature-pill">Extraction d'intent</span>
+            <span class="feature-pill">Mots-clés IA</span>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="card-action" data-open-project="festival-cannes-crm">
+              <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+              <span>Voir le détail</span>
+            </button>
+            <a class="card-repo-link" href="https://github.com/axemd/crm_festival_cannes" target="_blank" rel="noopener" aria-label="Ouvrir le dépôt GitHub du projet Festival de Cannes CRM">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span>Dépôt</span>
+            </a>
+          </div>
+          <div class="card-skills">
+            <span class="skill-chip">Symfony</span>
+            <span class="skill-chip">PHP</span>
+            <span class="skill-chip">API Python</span>
+            <span class="skill-chip">IA</span>
+          </div>
+        </div>
+
+        <div class="card data-packet reveal" id="ticket-manager">
+          <div class="card-image-placeholder project-image" style="--project-image: url('img/ticket_1.png');"></div>
+          <div class="card-header">
+            <span class="card-tag">
+              <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+              Support / Workflow
+            </span>
+            <span class="card-id">#02</span>
+          </div>
+          <h2>Gestion de tickets</h2>
+          <p class="card-description">
+            Application <strong>Symfony</strong> de suivi de tickets avec rôles, catégories, commentaires, historique de changements et statuts de lecture.
+          </p>
+          <div class="card-gained">
+            <strong>Contribution :</strong> projet réalisé seul, de la conception au développement de la plateforme de ticketing.
+          </div>
+          <div class="card-features">
+            <span class="feature-pill">RBAC métier</span>
+            <span class="feature-pill">Historique complet</span>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="card-action" data-open-project="ticket-manager">
+              <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+              <span>Voir le détail</span>
+            </button>
+            <a class="card-repo-link" href="https://github.com/axemd/ticket_manager" target="_blank" rel="noopener" aria-label="Ouvrir le dépôt GitHub du projet Gestion de tickets">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span>Dépôt</span>
+            </a>
+          </div>
+          <div class="card-skills">
+            <span class="skill-chip">Symfony 6.4</span>
+            <span class="skill-chip">PHP 8.1+</span>
+            <span class="skill-chip">Doctrine</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="card data-packet reveal" id="soundquiz">
+          <div class="card-image-placeholder project-image" style="--project-image: url('img/soundquiz_1.png');"></div>
+          <div class="card-header">
+            <span class="card-tag">
+              <i class="fa-solid fa-music" aria-hidden="true"></i>
+              IA / Audio
+            </span>
+            <span class="card-id">#03</span>
+          </div>
+          <h2>SoundQuiz</h2>
+          <p class="card-description">
+            Un <strong>blind test multijoueur</strong> pensé en services : front React/Vite, API Flask, WebSocket temps réel et pipeline IA audio.
+          </p>
+          <div class="card-gained">
+            <strong>Contribution :</strong> projet réalisé seul : architecture, front, backend, WebSocket, pipeline audio et Docker.
+          </div>
+          <div class="card-features">
+            <span class="feature-pill">Architecture Docker</span>
+            <span class="feature-pill">Jeu temps réel</span>
+            <span class="feature-pill">Pipeline IA</span>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="card-action" data-open-project="soundquiz">
+              <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+              <span>Voir le détail</span>
+            </button>
+            <a class="card-repo-link" href="https://github.com/axemd/soundquiz" target="_blank" rel="noopener" aria-label="Ouvrir le dépôt GitHub du projet SoundQuiz">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span>Dépôt</span>
+            </a>
+          </div>
+          <div class="card-skills">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">React/Vite</span>
+            <span class="skill-chip">Flask</span>
+            <span class="skill-chip">WebSocket</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">OpenL3</span>
+            <span class="skill-chip">Docker</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title fira">Compétences</h2>
+      <p class="section-subtitle">
+        Les technologies ci-dessous sont celles que j'utilise le plus et que je mets principalement en avant. J'utilise aussi d'autres technologies selon les besoins, notamment C# pour des prototypes WinForms, des API ou du scripting, mais elles restent secondaires dans ce portfolio.
+      </p>
+
+      <div class="skill-groups">
+        <div class="skill-group data-packet reveal">
+          <span class="strip-icon">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+          </span>
+          <h3>Développement web</h3>
+          <div class="skill-list">
+            <span class="skill-chip">Symfony</span>
+            <span class="skill-chip">PHP</span>
+            <span class="skill-chip">React/Vite</span>
+            <span class="skill-chip">Flask</span>
+            <span class="skill-chip">Java Spring Boot</span>
+          </div>
+          <p>Applications métier, interfaces web et API séparées selon les besoins des projets.</p>
+        </div>
+
+        <div class="skill-group data-packet reveal">
+          <span class="strip-icon">
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
+          </span>
+          <h3>Données & IA</h3>
+          <div class="skill-list">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">OpenL3</span>
+          </div>
+          <p>Gestion des données, analyse audio et traitements asynchrones autour des usages IA.</p>
+        </div>
+
+        <div class="skill-group data-packet reveal">
+          <span class="strip-icon">
+            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+          </span>
+          <h3>Architecture & pratiques</h3>
+          <div class="skill-list">
+            <span class="skill-chip">MVC</span>
+            <span class="skill-chip">Factory</span>
+            <span class="skill-chip">Refactoring</span>
+            <span class="skill-chip">Algorithmie</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">API REST</span>
+          </div>
+          <p>Structuration MVC, patrons comme Factory, refactoring progressif, découpage en services et logique algorithmique quand le projet le demande.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title fira">À propos de moi</h2>
+      <div class="about-intro">
+        <p>
+          Actuellement en <strong>3e année de BUT Informatique</strong> à Bourg-en-Bresse, je me spécialise pour devenir <strong>développeur orienté Data</strong>.
+        </p>
+        <p>
+          Enfant, j'ai commencé à chercher comment fonctionnaient les systèmes informatiques, puis j'ai continué parce que j'ai trouvé ça passionnant. Les projets présentés ici montrent ce fil conducteur : comprendre un besoin, structurer les données et construire un outil utilisable.
+        </p>
+      </div>
+
+      <div class="about-strip">
+        <div class="strip-item data-packet reveal">
+          <span class="strip-icon">
+            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+          </span>
+          <strong>Parcours & Objectifs</strong>
+          <span>BUT Informatique (Bourg-en-Bresse)</span>
+        </div>
+        <div class="strip-item data-packet reveal">
+          <span class="strip-icon">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+          </span>
+          <strong>Stack principales</strong>
+          <div class="about-chips">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">Java Spring Boot</span>
+            <span class="skill-chip">PHP / Symfony</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">JS</span>
+          </div>
+        </div>
+        <div class="strip-item data-packet reveal">
+          <span class="strip-icon">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+          </span>
+          <strong>Centres d'intérêt</strong>
+          <div class="about-chips">
+            <span class="skill-chip">IA</span>
+            <span class="skill-chip">Algorithmie</span>
+            <span class="skill-chip">Backend</span>
+            <span class="skill-chip">Gestion des données</span>
+            <span class="skill-chip">Jeux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title fira">Contact</h2>
+      <p class="section-subtitle">
+        Pour me contacter, consulter mon code ou suivre mon parcours professionnel.
+      </p>
+
+      <div class="about-strip">
+        <a class="strip-item data-packet reveal contact-link" href="mailto:axem.dch4@gmail.com">
+          <span class="strip-icon">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </span>
+          <strong>Email</strong>
+          <span class="contact-value">axem.dch4@gmail.com</span>
+        </a>
+        <a class="strip-item data-packet reveal contact-link" href="https://github.com/axemd" target="_blank" rel="noopener">
+          <span class="strip-icon">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+          <strong>GitHub</strong>
+          <span class="contact-value">github.com/axemd</span>
+        </a>
+        <a class="strip-item data-packet reveal contact-link" href="https://www.linkedin.com/in/axem-d-175994340/" target="_blank" rel="noopener">
+          <span class="strip-icon">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </span>
+          <strong>LinkedIn</strong>
+          <span class="contact-value">axem-d</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Fait par <a href="https://github.com/axemd" target="_blank" rel="noopener">Axem D.</a> - 2026</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="project-modal" onclick="closeModal(event)" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-paper" onclick="event.stopPropagation()">
+      <div class="modal-progress"></div>
+      <div class="modal-content-wrap">
+        <button class="modal-close" onclick="closeModal(event)" aria-label="Fermer">✕</button>
+        <div class="modal-header">
+          <div id="modal-tag" class="card-tag"></div>
+          <h2 id="modal-title">...</h2>
+        </div>
+        <div class="modal-body" id="modal-body">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-lightbox" id="image-lightbox" onclick="closeImageLightbox(event)">
+    <div class="image-lightbox-shell" onclick="event.stopPropagation()">
+      <div class="image-lightbox-scroll">
+        <img id="lightbox-image" src="" alt="" />
+      </div>
+      <div class="image-lightbox-bar">
+        <span class="image-lightbox-count" id="lightbox-count"></span>
+        <div class="image-lightbox-actions">
+          <button type="button" id="lightbox-prev" aria-label="Image précédente">‹</button>
+          <button type="button" id="lightbox-next" aria-label="Image suivante">›</button>
+          <button type="button" onclick="closeImageLightbox()" aria-label="Fermer">✕</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
